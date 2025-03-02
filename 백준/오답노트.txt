@@ -1,0 +1,23 @@
+2025-03-02 리뷰
+
+1. 1018번 체스판 다시 칠하기 *****
+
+2. list(input().strip()) for _ in range(5) --> ['a','b','c','d','e'] 이렇게 저장함, split()은 [abcde] 이렇게 저장
+
+3. a[::-1] --> 문자 거꾸로 출력
+
+4. 11005번 ord['A'] = chr[65] , ord['A'] 는 65를 반환하고 chr[65]는 'A'를 반환
+
+5. 1157번 for char in alpha --> alpha 안에 있는 요소를 하나씩 대조비교 (char로 생각)
+
+6. try: ~~ except EOFError break --> 문자가 끝날때 까지 반복하라
+
+7. 1436 if '666' in str(start) --> 666이 연속으로 되어 있는지 확인하기 위함
+
+8. for i in range(a): sum(map(int,str(i))) -->  분해합 문제에서 각 자리들을 더한 값을 구하기 위한 함수
+   map(int,str(i)) --> i를 str로 바꿔 자리에 접근할 수 있게 한 후 map을 통해 각 자리에 접근
+
+9. 시간 오류가 난다면 sys.stdin.readline() 사용해볼 것 (input() 대신에)
+
+10. 블랙잭 ->n장의 카드에서 M에 최대 가까운 카드 3장의 합 --> 1,2,3 연속 카드를 비교해야함
+                   for i in range(a-2) , for j in range(i+1,a-1) for k in range(j+1, a-2)
